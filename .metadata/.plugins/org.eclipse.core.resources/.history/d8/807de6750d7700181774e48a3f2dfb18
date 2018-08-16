@@ -1,0 +1,45 @@
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<c:out value="welcome to jstl"/> <br /><br />
+
+<c:import var="a" url="one.jsp" ></c:import>
+<c:out value="${a }"></c:out> <br /><br />
+
+<c:set var="hel" scope="session" value="${10*20 }"></c:set>
+<c:out value="${hel }"></c:out> <br /><br />
+<c:remove var="hel"/>
+<c:out value="${hel }"></c:out> <br />
+
+<c:catch var="exception">
+	<%
+		int a=0;
+		int b=10;
+		int c=b/a;
+	%>
+</c:catch>
+<c:if test="${exception != null }">
+	<p>
+		The type of exception is : ${exception } <br />
+		There is an exception:${exception.message }
+	</p>
+</c:if>
+
+<c:set var="marraige"  scope="session" value="${1*6 }"></c:set>
+	<p>
+		Your age is:
+		<c:out value="${marraige }"></c:out> <br />
+	</p>
+<c:choose>
+	<c:when test="${marraige<=19 }">
+	Not Allowed To Marriage
+	</c:when>
+	<c:when test="${marraige > 30 }">
+	Not Allowed to Marriage
+	</c:when>
+	<c:otherwise>
+	allowed to marriage... 
+	</c:otherwise>
+
+
+</c:choose>
+

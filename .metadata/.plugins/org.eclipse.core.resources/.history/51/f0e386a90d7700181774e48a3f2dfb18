@@ -1,0 +1,6 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<c:set var="j" value="4,3,2,1"/>
+<c:forEach items="${j}" var="item" begin="1" end="2"
+varStatus="status">
+<c:out value="${status.count}" default="abc"/>
+</c:forEach>

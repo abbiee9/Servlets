@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;WebContent&apos;&#x0D;&#x0A;- Original project: &apos;JSPExceptionUsingErrorPage&apos;&#x0D;&#x0A;- Destination element: &apos;WebContent&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     error.jsp&#x0D;&#x0A;     one.jsp&#x0D;&#x0A;     two.jsp" description="Copy files" element1="WebContent/error.jsp" element2="WebContent/one.jsp" element3="WebContent/two.jsp" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1529577840009" target="/JSPExceptionUsingWebXmlFile/WebContent" units="0" version="1.0"/>
+</session>
